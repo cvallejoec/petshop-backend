@@ -6,7 +6,7 @@ const router = express.Router();
 
 // Routes
 router.get('/', catchErrors(serviceController.list));
-router.get('/:slug', catchErrors(serviceController.get));
+router.get('/:serviceId', catchErrors(serviceController.get));
 router.post('/', catchErrors(serviceController.create));
 
 module.exports = router;
